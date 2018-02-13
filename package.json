@@ -1,0 +1,21 @@
+{
+  "name": "Kibana-Visualization-Change-Notifier",
+  "version": "1.0.0",
+  "description": "App to check for visualization changes in Kibana and notify admins",
+  "main": "app.js",
+  "scripts": {
+    "mongoToElastic": "node src/mongoToElastic",
+    "sqlToElastic": "node src/sqlToElastic",
+    "visChangeNotifier": "node src/visSecurity/visSecurity.js"
+  },
+  "author": "Arlind Bebja",
+  "license": "ISC",
+  "dependencies": {
+    "async": "^2.5.0",
+    "elasticsearch": "^13.2.0",
+    "fs": "0.0.1-security",
+    "mongodb": "^2.2.30",
+    "mssql": "^4.0.4",
+    "nodemailer": "^4.0.1"
+  }
+}
